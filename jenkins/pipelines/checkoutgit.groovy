@@ -1,11 +1,11 @@
-Node{
+node{
 stage('copy-git-repo'){
     deleteDir()
     checkout([
-        $class: 'gitSCM',
-        branches:[[name: ${gitBranch}]],
-        doGenerateSubmoduleConfiguration:false
-        userRemoteConfigs:[[url: ${gitUrl}]]
+        $class: 'GitSCM',
+        branches:[[name: gitBranch]],
+        doGenerateSubmoduleConfigurations:false,
+        userRemoteConfigs:[[url: gitUrl]]
     ])
 }
 }
