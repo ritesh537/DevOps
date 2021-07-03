@@ -7,7 +7,7 @@ pipelineJob("gitcheckout"){
     }
     definition{
         cps{
-            script(readFileFromWorkspace('DevOps/jenkins/pipelines/checkoutgit.groovy'))
+            script(readFileFromWorkspace('jenkins/pipelines/checkoutgit.groovy'))
             sandbox()
         }
     }
