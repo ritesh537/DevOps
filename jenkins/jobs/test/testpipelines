@@ -1,8 +1,8 @@
 pipelineJob("gitcheckout"){
     description('copy-git-repo')
     parameters{
-        choiceParam('gitURL',['https://github.com/ritesh537/ml-project'], 'Git Repo')
-        choiceParam('gitBranch', ['master', 'feature'], 'Branch')
+        choiceParam('gitUrl',['https://github.com/ritesh537/ml-project'], 'Git Repo')
+        choiceParam('gitBranch', ['main', 'feature'], 'Branch')
 
     }
     definition{
