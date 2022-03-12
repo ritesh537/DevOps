@@ -1,3 +1,5 @@
-# DevOps 
-Hi buddy, thanks for checking out by git repo. 
-I'm a DevOps engineer and wanted to contribute to my community. Hope my codes can help someone. 
+jenkins folder contains the code for various pipelines.
+
+jenkins/jobs folder having groovy files for creating a job and jenkins/pipeline having the steps perfromed by the jobs
+
+
